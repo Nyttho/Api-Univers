@@ -11,8 +11,8 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 Et d'avoir créer un compte:
 
-- [clipdrop] (https://clipdrop.co/apis)
-- [Groq] (https://console.groq.com/)
+- [clipdrop](https://clipdrop.co/apis)
+- [Groq](https://console.groq.com/)
 
 ## 📂 Installation
 
