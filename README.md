@@ -9,8 +9,8 @@ Avant de commencer, assurez-vous d'avoir installé :
 - [Node.js](https://nodejs.org/)
 - [PostgreSQL](https://www.postgresql.org/)
 
-Et d'avoir créer un compte clipdrop(https://clipdrop.co/apis/docs/text-to-image)
-et Groq(https://console.groq.com/playground)
+Et d'avoir créer un compte clipdrop (https://clipdrop.co/apis/docs/text-to-image)
+et Groq (https://console.groq.com/playground)
 
 ## 📂 Installation
 
@@ -48,3 +48,7 @@ npm run start
 ```
 
 L'API sera disponible à l'adresse `http://localhost:3000` (ou le port défini dans votre `.env`).
+
+## Documentation
+
+Une documentation de l'api est disponible à l'adresse `//http://localhost:3000/api-docs/`
