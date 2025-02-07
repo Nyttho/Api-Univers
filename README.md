@@ -51,4 +51,4 @@ L'API sera disponible à l'adresse `http://localhost:3000` (ou le port défini d
 
 ## Documentation
 
-Une documentation de l'api est disponible à l'adresse `http://localhost:3000/api-docs/`
+Une documentation de l'api est disponible à l'adresse `http://localhost:3000/api-docs/` (WIP)
