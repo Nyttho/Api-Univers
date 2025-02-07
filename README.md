@@ -9,8 +9,10 @@ Avant de commencer, assurez-vous d'avoir installé :
 - [Node.js](https://nodejs.org/)
 - [PostgreSQL](https://www.postgresql.org/)
 
-Et d'avoir créer un compte clipdrop (https://clipdrop.co/apis)
-et Groq (https://console.groq.com/)
+Et d'avoir créer un compte:
+
+- [clipdrop] (https://clipdrop.co/apis)
+- [Groq] (https://console.groq.com/)
 
 ## 📂 Installation
 
