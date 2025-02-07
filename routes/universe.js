@@ -32,7 +32,6 @@ const universeRouter = Router();
  *       500:
  *         description: Erreur interne du serveur.
  */
-universeRouter.get("/", getAllUniverses);
 
 /**
  * @swagger
@@ -57,7 +56,6 @@ universeRouter.get("/", getAllUniverses);
  *       500:
  *         description: Erreur interne du serveur.
  */
-universeRouter.get("/:id", getOneUniverse);
 
 /**
  * @swagger
@@ -90,7 +88,6 @@ universeRouter.get("/:id", getOneUniverse);
  *       500:
  *         description: Erreur interne du serveur.
  */
-universeRouter.post("/", isAuth, createOneUniverse);
 
 /**
  * @swagger
@@ -130,7 +127,6 @@ universeRouter.post("/", isAuth, createOneUniverse);
  *       500:
  *         description: Erreur interne du serveur.
  */
-universeRouter.put("/:id", isAuth, updateOneUniverse);
 
 /**
  * @swagger
@@ -157,6 +153,11 @@ universeRouter.put("/:id", isAuth, updateOneUniverse);
  *       500:
  *         description: Erreur interne du serveur.
  */
+
+universeRouter.get("/", getAllUniverses);
+universeRouter.get("/:id", getOneUniverse);
+universeRouter.post("/", isAuth, createOneUniverse);
+universeRouter.put("/:id", isAuth, updateOneUniverse);
 universeRouter.delete("/:id", isAuth, deleteOneUniverse);
 
 export default universeRouter;

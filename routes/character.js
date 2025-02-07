@@ -51,7 +51,6 @@ const characterRouter = Router();
  *       500:
  *         description: Erreur interne du serveur.
  */
-characterRouter.get("/", getAllCharacters);
 
 /**
  * @swagger
@@ -93,7 +92,6 @@ characterRouter.get("/", getAllCharacters);
  *       500:
  *         description: Erreur interne du serveur.
  */
-characterRouter.get("/:id", getOneCharacter);
 
 /**
  * @swagger
@@ -137,7 +135,6 @@ characterRouter.get("/:id", getOneCharacter);
  *       500:
  *         description: Erreur interne du serveur.
  */
-characterRouter.get("/universe/:id", getAllCharactersFromUniverse);
 
 /**
  * @swagger
@@ -172,7 +169,6 @@ characterRouter.get("/universe/:id", getAllCharactersFromUniverse);
  *       500:
  *         description: Erreur interne du serveur.
  */
-characterRouter.post("/", isAuth, createOneCharacter);
 
 /**
  * @swagger
@@ -219,7 +215,6 @@ characterRouter.post("/", isAuth, createOneCharacter);
  *       500:
  *         description: Erreur interne du serveur.
  */
-characterRouter.put("/:id", isAuth, updateOneCharacter);
 
 /**
  * @swagger
@@ -248,6 +243,12 @@ characterRouter.put("/:id", isAuth, updateOneCharacter);
  *       500:
  *         description: Erreur interne du serveur.
  */
+
+characterRouter.get("/", getAllCharacters);
+characterRouter.get("/:id", getOneCharacter);
+characterRouter.get("/universe/:id", getAllCharactersFromUniverse);
+characterRouter.post("/", isAuth, createOneCharacter);
+characterRouter.put("/:id", isAuth, updateOneCharacter);
 characterRouter.delete("/:id", isAuth, deleteOneCharacter);
 
 export default characterRouter;

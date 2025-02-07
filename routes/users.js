@@ -31,7 +31,6 @@ const userRouter = Router();
  *       500:
  *         description: Erreur interne du serveur.
  */
-userRouter.get("/", getAllUsers);
 
 /**
  * @swagger
@@ -56,7 +55,6 @@ userRouter.get("/", getAllUsers);
  *       500:
  *         description: Erreur interne du serveur.
  */
-userRouter.get("/:id", getOneUser);
 
 /**
  * @swagger
@@ -98,7 +96,6 @@ userRouter.get("/:id", getOneUser);
  *       500:
  *         description: Erreur interne du serveur.
  */
-userRouter.put("/:id", isAuth, updateOneUser);
 
 /**
  * @swagger
@@ -127,7 +124,6 @@ userRouter.put("/:id", isAuth, updateOneUser);
  *       500:
  *         description: Erreur interne du serveur.
  */
-userRouter.delete("/:id", isAuth, deleteOneUser);
 
 /**
  * @swagger
@@ -161,6 +157,11 @@ userRouter.delete("/:id", isAuth, deleteOneUser);
  *       500:
  *         description: Erreur interne du serveur.
  */
+
+userRouter.get("/", getAllUsers);
+userRouter.get("/:id", getOneUser);
+userRouter.put("/:id", isAuth, updateOneUser);
+userRouter.delete("/:id", isAuth, deleteOneUser);
 userRouter.post("/signup", registerUser);
 
 export default userRouter;

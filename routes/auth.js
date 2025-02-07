@@ -39,7 +39,6 @@ const authRouter = Router();
  *       500:
  *         description: Erreur interne du serveur.
  */
-authRouter.post("/", authUser);
 
 /**
  * @swagger
@@ -55,6 +54,8 @@ authRouter.post("/", authUser);
  *       500:
  *         description: Erreur interne du serveur.
  */
+
+authRouter.post("/", authUser);
 authRouter.post("/logout", logoutUser);
 
 export default authRouter;
